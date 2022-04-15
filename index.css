@@ -1,0 +1,298 @@
+html {
+    font-family: 'Cairo', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: #EBDF94;
+    color: #201E1F;
+}
+
+header, h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header Nav */
+#nav-bar {
+    width: 100%;
+    margin: 0;
+    top: 0;
+    background-color: #201E1F;
+    position: fixed;
+    z-index: 100;
+    height: 4rem;
+}
+
+#nav-bar ul {
+    list-style: none;
+    margin: 0;
+}
+
+#nav-bar li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#nav-bar a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Page Name */
+.heading {
+    background-color: #EC9192;
+    color: #EBDF94;
+    padding: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-shadow: 0 0 1px #201E1F, 0 0 1px #201E1F, 0 0 1px #201E1F, 0 0 1px #201E1F;
+}
+
+
+/* About Me */
+#about-me-section {
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    width: 60%;
+    text-align: center;
+}
+
+
+/* Projects Section */
+#projects-section li {
+    list-style: none;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+
+/* Footer Nav */
+#footer-bar {
+    width: 100%;
+    background-color: #201E1F;
+    position: static;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+#footer-bar li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+#footer-bar a {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: .75rem;
+}
+
+
+/* _____________________________MEDIA QUERIES_________________________ */
+@media screen and (max-width: 680px) {
+    #nav-bar {
+        height: auto;
+    }
+
+    #nav-bar li {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-bar a {
+        padding: .5rem;
+    }
+
+    .heading {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .starter-section, .grower-section, .layer-section {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        word-break: break-word;
+    }
+
+    input {
+        max-width: 2rem;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #contact-info #name {
+        border: 1px dashed #201E1F;
+        width: auto;
+        padding: .2rem;
+        margin-bottom: .5rem;
+    }
+
+    #contact-info #email {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    footer {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav-bar {
+      position: absolute;
+    }
+  
+    .heading {
+        font-size: 1rem;
+    }
+  }
+
+
+  /* _________________________FEED CALCULATOR PAGE___________________________________ */
+
+  /* Starter Section */
+.starter-section, .grower-section, .layer-section {
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 15px;
+    margin: 5% auto;
+    padding: 1em;
+    width: 30%;
+}
+
+.starter-section h3 {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 3px #201E1F;
+}
+
+.starter-section {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.starter-section:before {
+    background-image: url('https://www.farmcreditofvirginias.com/sites/default/files/images/article/baby%20chicks.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+
+/* Grower Section */
+.grower-section h3 {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 3px #201E1F;
+}
+
+.grower-section {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.grower-section:before {
+    background-image: url('https://i0.wp.com/homesteadandchill.com/wp-content/uploads/2021/08/signs-when-chickens-start-laying-eggs-16-weeks-pullets.jpeg?resize=800%2C520&ssl=1');
+    background-size: cover;
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+
+/* Layer Section */
+.layer-section h3 {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 3px #201E1F;
+}
+
+.layer-section {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.layer-section:before {
+    background-image: url('https://840027.smushcdn.com/2573706/wp-content/uploads/2019/03/flock-1024x680.jpg?lossy=1&strip=1&webp=1');
+    background-size: cover;
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+
+/* Submit Buttons */
+button {
+    border: 1px solid #201E1F;
+    border-radius: 3px;
+    color: #201E1F;
+    background-color: #EC9192;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #201E1F;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* _______________________CONTACT ME PAGE___________________________ */
+
+/* Contact Info */
+#contact-info {
+    padding-bottom: 3rem;
+}
+
+/* Name */
+#name {
+    border: 2px dashed #201E1F;
+    padding: 2rem;
+    width: 20%;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+/* Email */
+#email {
+    margin-top: 3rem;
+}

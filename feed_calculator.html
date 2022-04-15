@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chicken Feed Calculator</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="C:\Users\chels\OneDrive\Documents\Codecademy\Portfolio_Website\Resources\index.css">
+
+    <!-- Fonts -->
+    <!-- Playfair Display for headings, Cairo for main text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+  </head>
+
+  <body>
+
+    <div id="nav-bar">
+        <ul>
+            <li><a href="C:\Users\chels\OneDrive\Documents\Codecademy\Portfolio_Website\index.html">Home</a></li>
+            <li><a href="C:\Users\chels\OneDrive\Documents\Codecademy\Portfolio_Website\Resources\Contact\contact_me.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <div class="heading">
+        <h1>Chicken Feed Calculator</h1>
+    </div>
+
+      <div id="main">
+
+          <div class="starter-section">
+              <h3>Chick Starter for Weeks 0-4</h3>
+              <form>
+                  <label for="starter-bird-count">Number of birds you're feeding:</label>
+                  <input type="number" name="starter-bird-count" id="starter-bird-count" />
+                  <br />
+                  <label for="starter-weeks">Number of weeks:</label>
+                  <input type="number" name="starter-weeks" id="starter-weeks" min="1" max="4" />
+              </form>
+              <button id="starter-submit-btn">Calculate!</button>
+              <p id="starter-answer"></p>
+          </div>
+
+          <div class="grower-section">
+              <h3>Grower/Broiler for Weeks 5-16</h3>
+              <form>
+                  <label for="grower-bird-count">Number of birds you're feeding:</label>
+                  <input type="number" name="grower-bird-count" id="grower-bird-count" />
+                  <br />
+                  <label for="grower-weeks">Number of weeks:</label>
+                  <input type="number" name="grower-weeks" id="grower-weeks" min="1" max="15" />
+              </form>
+              <button id="grower-submit-btn">Calculate!</button>
+              <p id="grower-answer"></p>
+          </div>
+
+          <div class="layer-section">
+              <h3>Layer Feed for Week 16+</h3>
+              <form>
+                  <label for="layer-bird-count">Number of birds you're feeding:</label>
+                  <input type="number" name="layer-bird-count" id="layer-bird-count" />
+                  <br />
+                  <label for="layer-weeks">Number of weeks:</label>
+                  <input type="number" name="layer-weeks" id="layer-weeks" min="1" />
+              </form>
+              <button id="layer-submit-btn">Calculate!</button>
+              <p id="layer-answer"></p>
+          </div>
+
+      </div>
+
+      <nav id="footer-bar">
+        <ul>
+            <li><a href="C:\Users\chels\OneDrive\Documents\Codecademy\Portfolio_Website\index.html">Home</a></li>
+            <li><a href="C:\Users\chels\OneDrive\Documents\Codecademy\Portfolio_Website\Resources\Contact\contact_me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- JavaScript -->
+    <script src="./feed_calculator.js"></script>
+
+  </body>
+
+</html>
